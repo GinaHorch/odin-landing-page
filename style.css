@@ -5,9 +5,14 @@ html {
 }
 body {
     display: flex;
-    font-family: hero, sans-serif;
+    font-family: roboto, sans-serif;
     min-height: 100vh;
     flex-direction: column;
+}
+
+.header,
+.footer {
+    background: #1F2937;
 }
 
 .header {
@@ -15,11 +20,10 @@ body {
     flex-direction: column;
     align-items:flex-end;
     justify-content: space-between;
-    background: #1F2937;
     padding-top: 16px;
     padding-left: 150px;
     padding-right: 150px;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
 }
 
 .navigation-bar {
@@ -33,7 +37,7 @@ body {
     width: auto;
     height: 80px;
 }
-/* adjusted the font sizes to better reflect the website image, the suggested font sizes appeared to large, so I slightly reduced the sizes. */
+/* adjusted the font sizes to better reflect the assignment image, the suggested font sizes appeared too large, so I slightly reduced the sizes. */
 .logo-text {
     font-size: 18px;
     color: #F9FAF8;
@@ -57,7 +61,7 @@ a {
 .header-content {
     display: flex;
     justify-content: space-between;
-    gap: 100px;
+    gap: 80px;
     padding-top: 70px;
 }
 
@@ -66,6 +70,7 @@ a {
     flex-direction: column;
     justify-content: space-between;
     font-size: 12px;
+    font-family: Hero, sans-serif;
     color: #F9FAF8;
     flex: auto;
     flex-wrap: wrap;
@@ -87,11 +92,118 @@ a {
 
 h1 {
     margin: 0;
-    font-size: 48px;
+    font-size: 40px;
     font-weight: bolder;
+    font-family: Hero, sans-serif;
 }
 
 .placeholder-image {
     display: flex;
     flex: 1;
+    max-width: 400px;
+}
+
+.information {
+    background: #F9FAF8;
+}
+
+#information-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    height: 120px;
+    max-width: 120px;
+    flex: 1 0 100px;
+    border-color: #3882F6;
+    background-color: #F9FAF8;
+    border-radius: 10px;
+    border-style: solid;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 30px;
+}
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 80px 80px;
+    font-size: 14px;
+}
+
+.text {
+    display: flex;
+    flex: 1 0 100px;
+    max-width: 130px;
+    padding-top: 8px;
+    text-align: center;
+}
+.quote {
+    background: #E5E7EB;
+    padding: 50px 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.quote-text {
+    display: flex;
+    flex: 1;
+    font-style: italic;
+    font-size: 26px;
+    font-weight: 100;
+    font-family: Hero, sans-serif;
+    color: #1F2937;
+    margin-bottom: 0;
+}
+
+.author {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+}
+
+.call {
+    display: flex;
+    background-color: #3882F6;
+    border-color: #F9FAF8;
+    border-style: solid;
+    padding: 20px 10px;
+}
+
+.call-paragraph {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.call .sign-up {
+    display: flex;
+    width: 90px;
+    height: 40px;
+    background-color: transparent;
+    color: #F9FAF8;
+    border-color: #F9FAF8;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    margin-top: auto;
+    flex-shrink: 0;
+    color: #F9FAF8;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
