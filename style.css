@@ -8,22 +8,27 @@ body {
     font-family: roboto, sans-serif;
     min-height: 100vh;
     flex-direction: column;
+    margin: 0;
 }
 
-.header,
+.header-background {
+    display: flex;
+    background: #1F2937;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container,
 .footer {
     background: #1F2937;
 }
 
-.header {
+.header-container {
     display: flex;
     flex-direction: column;
     align-items:flex-end;
     justify-content: space-between;
-    padding-top: 16px;
-    padding-left: 150px;
-    padding-right: 150px;
-    padding-bottom: 80px;
 }
 
 .navigation-bar {
@@ -145,56 +150,89 @@ h1 {
     padding-top: 8px;
     text-align: center;
 }
-.quote {
+
+.quote-background {
+    display: flex;
+    background: #E5E7EB;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-container {
     background: #E5E7EB;
     padding: 50px 200px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
+    max-width: fit-content;
 }
 
 .quote-text {
     display: flex;
     flex: 1;
+    align-self: center;
     font-style: italic;
     font-size: 26px;
     font-weight: 100;
     font-family: Hero, sans-serif;
     color: #1F2937;
-    margin-bottom: 0;
+    margin: 0;
+    max-width: 600px;
 }
 
-.author {
+.quote-container .author {
     display: flex;
-    justify-content: flex-end;
+    align-self: flex-end;
     font-weight: bold;
+    max-width: 600px;
 }
 
-.call {
+.call-background {
     display: flex;
+    background: #F9FAF8;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-container {
+    display: flex;
+    border-radius: 10px;
     background-color: #3882F6;
-    border-color: #F9FAF8;
-    border-style: solid;
-    padding: 20px 10px;
+    padding: 40px 80px;
+    justify-content: space-around;
+    align-items: center;
+    width: 600px;
 }
 
 .call-paragraph {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    color: #F9FAF8;
+    font-size: 18px;
 }
 
-.call .sign-up {
-    display: flex;
-    width: 90px;
-    height: 40px;
-    background-color: transparent;
+.call-container .sign-up {
+    display: box;
+    width: 80px;
+    height: 30px;
+    background: transparent;
     color: #F9FAF8;
     border-color: #F9FAF8;
+    border-style: solid;
     border-radius: 10px;
     justify-content: center;
     align-items: center;
+}
+
+.call-text {
+    margin: 0;
+    font-size: 12px;
+    font-weight: lighter;
 }
 
 .footer {
